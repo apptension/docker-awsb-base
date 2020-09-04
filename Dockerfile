@@ -1,6 +1,6 @@
 FROM python:3.8-slim-buster
 
-RUN apt-get update && apt-get install -y wget gnupg curl unzip
+RUN apt-get update && apt-get install -y wget gnupg curl unzip make
 
 RUN \
   echo "deb https://deb.nodesource.com/node_12.x buster main" > /etc/apt/sources.list.d/nodesource.list && \
